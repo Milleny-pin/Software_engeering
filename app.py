@@ -18,3 +18,7 @@ if opcao_selecionada == 1:
 if opcao_selecionada == 2:
     resultado = n1 - n2
     print(f"O resultado é {resultado}")
+
+if opcao_selecionada == 3:
+    resultado = n1 * n2
+    print(f"O resultado é {resultado}")
