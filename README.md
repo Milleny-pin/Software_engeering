@@ -33,3 +33,33 @@ Implementação da Multiplicação: Desenvolvida a função para multiplicar doi
 Implementação da Divisão: Adicionada a funcionalidade de divisão, incluindo o tratamento para divisão por zero.
 
 Adição de Testes (Pytest): Introdução de testes unitários usando o framework pytest para garantir a correção das operações e a robustez do código.
+
+✅ Requisitos Funcionais
+O sistema deve permitir que o usuário selecione uma operação matemática: adição, subtração, multiplicação ou divisão.
+
+O sistema deve solicitar dois números ao usuário para realizar a operação selecionada.
+
+O sistema deve calcular e exibir o resultado da operação matemática selecionada.
+
+O sistema deve exibir mensagens de erro em casos de:
+
+divisão por zero,
+
+opção inválida,
+
+entrada inválida (como letras no lugar de números).
+
+✅ Requisitos Não Funcionais
+O sistema deve ser fácil de usar, com uma interface de texto clara e intuitiva.
+
+O sistema deve responder rapidamente às entradas do usuário e processar as operações em tempo hábil.
+
+O sistema deve ser executado em ambiente de linha de comando, sem necessidade de interface gráfica.
+
+O código deve ser estruturado de forma legível e com tratamento de exceções para evitar falhas inesperadas.
+
+Modelagem UML
+![Modelagem UML Calculadora](UML.png)
+
+Diagrama de classe
+![Diagrama de classe Calculadora](Diagrama.png)
