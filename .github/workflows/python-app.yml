@@ -1,0 +1,32 @@
+# Nome do workflow que aparecerá no GitHub Actions
+name: Python Application CI
+
+# Eventos que irão disparar este workflow
+on:
+  push:
+    branches: [ "main" ] # Dispara quando há um push na branch 'main'
+  pull_request:
+    branches: [ "main" ] # Dispara quando há um pull request para a branch 'main'
+
+jobs:
+  build:
+    # O ambiente onde o job será executado
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do Código
+      uses: actions/checkout@v4 # Ação para baixar o código do repositório
+
+    - name: Configurar Python
+      uses: actions/setup-python@v5 # Ação para configurar o ambiente Python
+      with:
+        python-version: '3.x' # Usa a versão mais recente do Python 3
+
+    - name: Instalar Dependências
+      run: |
+        python -m pip install --upgrade pip # Atualiza o pip
+        pip install pytest # Instala o pytest (se você tiver um requirements.txt, adicione: pip install -r requirements.txt)
+
+    - name: Executar Testes
+      run: |
+        pytest # Executa os testes. Certifique-se de ter seus arquivos de teste (ex: test_calculator.py) no seu projeto.
