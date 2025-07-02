@@ -32,9 +32,6 @@ def executar_calculadora(opcao_selecionada_str, n1_str, n2_str):
     except Exception as e:
         return f"Ocorreu um erro inesperado: {e}"
 
-# O bloco if __name__ == "__main__": garante que o código abaixo
-# só será executado quando o arquivo app.py for rodado diretamente,
-# e não quando for importado como um módulo em outro arquivo (como o de teste).
 if __name__ == "__main__":
     print("Selecione as opções abaixo:")
     print("1 - Adição")

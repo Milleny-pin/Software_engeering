@@ -10,7 +10,7 @@ Tratamento de Entrada: Para garantir que os dados inseridos pelo usuário sejam 
 
 Manipulação de Tipos de Dados: Para realizar operações matemáticas precisas.
 
-Tratamento de Exceções: Para lidar com cenários inesperados, como divisão por zero ou entradas inválidas.
+Tratamento de Exceções: Para lidar com cenários inesperados, como divisão por zero ou entradas inválidas...
 
 🚀 Como a Calculadora Funciona
 A calculadora é operada de forma interativa através do seu terminal. Siga os passos abaixo para utilizá-la:
